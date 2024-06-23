@@ -3,7 +3,7 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="/css/article.css">
+<link rel="stylesheet" href="{{ SITEURL }}/css/article.css">
 {% endblock %}
 
 {% block content %}
@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-12">
             <h1>{{ article.title }}</h1>
-            <img src="/images/{{ article.category|lower }}/{{ article.slug }}.jpg" alt="{{ article.slug }}" class="img-fluid">
+            <img src="{{ SITEURL }}/images/{{ article.category|lower }}/{{ article.slug }}.jpg" alt="{{ article.slug }}" class="img-fluid">
             <h3>{{ article.locale_date }}</h3>
         </div>
     </div>

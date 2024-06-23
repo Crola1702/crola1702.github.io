@@ -11,9 +11,9 @@
 
         {% for article in articles %}
         
-        <a href="/{{ article.url }}" style="color:inherit; text-decoration: inherit;">
+        <a href="{{ SITEURL }}/{{ article.url }}" style="color:inherit; text-decoration: inherit;">
             <div class="card m-3">
-                <img src="/images/{{ article.category|lower }}/{{ article.slug }}.jpg" alt="{{ article.slug }}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px;">
+                <img src="{{ SITEURL }}/images/{{ article.category|lower }}/{{ article.slug }}.jpg" alt="{{ article.slug }}" class="card-img-top" style="object-fit: cover; width: 100%; height: 200px;">
                 <div class="card-body">
                     <h3 class="card-title">{{ article.title }}</h5>
                     <h5 class="card-subtitle">{{ article.locale_date }}</h6>
