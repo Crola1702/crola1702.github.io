@@ -1,24 +1,23 @@
-{% extends "base.html" %}
-
-{% block title %}{{ article.title }}{% endblock %}
-
-{% block head %}
-<link rel="stylesheet" href="{{ SITEURL }}/css/article.css">
-{% endblock %}
-
-{% block content %}
-<div class="col-md-8">
+{% extends "base.html" %} {% block title %}{{ article.title }}{% endblock %} {%
+block head %}
+<link rel="stylesheet" href="{{ SITEURL }}/css/article.css" />
+{% endblock %} {% block content %}
+<div class="container-fluid d-flex justify-content-center">
+  <div class="col-md-8">
     <div class="row">
-        <div class="col-md-12">
-            <h1>{{ article.title }}</h1>
-            <img src="{{ SITEURL }}/images/{{ article.category|lower }}/{{ article.slug }}.jpg" alt="{{ article.slug }}" class="img-fluid">
-            <h3>{{ article.locale_date }}</h3>
-        </div>
+      <h1>{{ article.title }}</h1>
     </div>
     <div class="row">
-        <div class="col-md-8">
-            {{ article.content }}
-        </div>
+      <img
+        src="{{ SITEURL }}/images/{{ article.category|lower }}/{{ article.slug }}.jpg"
+        alt="{{ article.slug }}"
+        class="img-fluid"
+      />
     </div>
+    <div class="row">
+      <h3>{{ article.locale_date }}</h3>
+    </div>
+    <div class="row">{{ article.content }}</div>
+  </div>
 </div>
 {% endblock %}
