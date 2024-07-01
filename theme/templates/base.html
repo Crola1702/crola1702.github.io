@@ -14,28 +14,44 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    {% block head %}
-    {% endblock %}
+    {% block head %} {% endblock %}
   </head>
 
   <body>
-    <nav class="navbar navbar-expand bg-body-tertiary">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a href="{{ SITEURL }}/" class="nav-link">Home</a>
-          </li>
-          {% for category, articles in categories %}
-            {% if category.name != "Review" %}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ SITEURL }}/{{ category.url }}">{{ category.name }} ({{ articles|length }} items)</a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+        <a class="navbar-brand" href="#">
+          <!-- <img src="{{ SITEURL }}/images/cristobal_cropped.png" alt="Cristóbal" width="60" height="60" class="d-inline-block align-text-top" /> -->
+          <div class="ml-auto">
+            <span>Cristóbal Arroyo</span>
+            <br>
+            <span><small>Software Developer</small></span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a href="{{ SITEURL }}/" class="nav-item nav-link active">Home</a>
+            {% for category, articles in categories %} {% if category.name
+            !="Review" %}
+            <a href="{{ SITEURL }}/{{ category.url }}" class="nav-item nav-link active"
+              >{{ category.name }}</a
+            >
+            {% endif %} {% endfor %}
+          </div>
+        </div>
       </div>
     </nav>
-    <div class="container">{% block content %}{% endblock %}</div>
+    <div class="container-fluid p-4">{% block content %}{% endblock %}</div>
   </body>
 </html>
