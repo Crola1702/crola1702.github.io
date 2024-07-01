@@ -3,6 +3,15 @@ content %}
 <div class="row">
   <h1>{{ SITENAME }}</h1>
 
+  {% for page in pages if page.slug == "about-me" %}
+
+  <h3>{{ page.title }}</h3>
+  <p>{{ page.content }}</p>
+
+  {% endfor %}
+
+  <h1>Mis Proyectos</h1>
+
   {% for article in articles %}
   <div class="col-md-6">
     <a
