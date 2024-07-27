@@ -6,3 +6,5 @@ __pycache__/
 # Pelican output
 output/
 
+# Translation binary files
+theme/translations/*/LC_MESSAGES/*.mo
