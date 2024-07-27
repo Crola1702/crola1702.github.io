@@ -33,11 +33,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav ms-auto">
-            <a href="{{ SITEURL }}/" class="nav-item nav-link active">Home</a>
+            <a href="{{ SITEURL }}/" class="nav-item nav-link active">{{ gettext('home') }}</a>
             {% for category, articles in categories %} {% if category.name
             !="Review" %}
             <a href="{{ SITEURL }}/{{ category.url }}" class="nav-item nav-link active"
-              >{{ category.name }}</a
+              >{{ gettext(category.name|lower) }}</a
             >
             {% endif %} {% endfor %}
           </div>

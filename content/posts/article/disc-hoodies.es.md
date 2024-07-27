@@ -1,5 +1,5 @@
 title: Sacos DISC
-slug: sacos-disc
+slug: disc-hoodies
 lang: es
 date: 2024-06-20
 category: Article
@@ -8,4 +8,4 @@ En Conisis estamos haciendo los sacos del departamento. Es un proceso que ha lle
 
 He aquí una imagen del saco que hemos logrado:
 
-![Cristobal Saco DISC](/images/article/sacos-disc_1.jpg)
+![Cristobal Saco DISC](/images/article/disc-hoodies_1.jpg)

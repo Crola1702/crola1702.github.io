@@ -1,9 +1,9 @@
 title: DISC Hoodies
-slug: sacos-disc
+slug: disc-hoodies
 lang: en
 date: 2024-06-20
 category: Article
 
 English testing testing
 
-![Cristobal Saco DISC](/images/article/sacos-disc_1.jpg)
+![Cristobal DISC Hoodie](/images/article/disc-hoodies_1.jpg)

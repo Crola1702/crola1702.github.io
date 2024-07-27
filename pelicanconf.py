@@ -1,5 +1,5 @@
 AUTHOR = 'Crola1702'
-SITENAME = 'Crola1702'
+SITENAME = 'Crola1702 Website'
 SITEURL = ""
 
 PATH = "content"
@@ -9,7 +9,7 @@ ARTICLE_URL = '{category}/{slug}.html'
 TIMEZONE = 'America/Bogota'
 DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 
-DEFAULT_LANG = 'es'
+DEFAULT_LANG = 'en'
 
 STATIC_PATHS = ['images', 'css']
 
@@ -38,14 +38,18 @@ DEFAULT_PAGINATION = 10
 
 PLUGINS = ['i18n_subsites']
 
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
+
+I18N_GETTEXT_NEWSTYLE = True
+I18N_TEMPLATES_LANG = '' # Leave empty to translate all templates.
+
 I18N_SUBSITES = {
-    # 'es': {
-    #     'SITENAME': 'Crola1702 - Español',
-    # },
-    'en': {
-        'SITENAME': 'Crola1702 Blog',
+    'es': {
+        'SITENAME': 'Crola1702 - Sitio Web',
         'STATIC_PATHS': ['images', 'css'],
-    }
+    },
 }
 
 # Uncomment following line if you want document-relative URLs when developing

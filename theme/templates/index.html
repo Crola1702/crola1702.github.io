@@ -5,12 +5,18 @@ content %}
 
   {% for page in pages if page.slug == "about-me" %}
 
+  {% if page.lang == "en" %}
+  <br>
+  <a href="{{ SITEURL }}/es/">Leer en Español</a>
+  <br>
+  {% endif %}
+
   <h3>{{ page.title }}</h3>
   <p>{{ page.content }}</p>
 
   {% endfor %}
 
-  <h1>Mis Proyectos</h1>
+  <h1>{{ gettext('my-posts') }}</h1>
 
   {% for article in articles %}
   <div class="col-md-6">
