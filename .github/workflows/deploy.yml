@@ -24,7 +24,9 @@ jobs:
           python-version: "3.10"
       - run: pip install -r requirements.txt
       - name: Build pelican site
-        run: pelican -o output -s publishconf.py -t theme content
+        run: |
+          pybabel compile --directory theme/translations/ --domain messages
+          pelican -o output -s publishconf.py -t theme content
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
