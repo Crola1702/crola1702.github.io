@@ -36,5 +36,17 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
+PLUGINS = ['i18n_subsites']
+
+I18N_SUBSITES = {
+    # 'es': {
+    #     'SITENAME': 'Crola1702 - Español',
+    # },
+    'en': {
+        'SITENAME': 'Crola1702 Blog',
+        'STATIC_PATHS': ['images', 'css'],
+    }
+}
+
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True

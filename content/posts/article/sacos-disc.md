@@ -1,4 +1,6 @@
 title: Sacos DISC
+slug: sacos-disc
+lang: es
 date: 2024-06-20
 category: Article
 

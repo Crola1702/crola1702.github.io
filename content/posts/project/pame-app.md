@@ -1,6 +1,7 @@
-title: Pame App (Proyecto de grado)
-date: 2024-06-21
+title: Pame App 
 slug: pame-app
+lang: es
+date: 2024-06-21
 category: Project
 
 Pame App es un sistema de monitoreo de pacientes con transplante Renal.
