@@ -28,7 +28,7 @@ msgid "event"
 msgstr "Events"
 
 msgid "project"
-msgstr "Project"
+msgstr "Projects"
 
 msgid "my-posts"
 msgstr "My Posts"
